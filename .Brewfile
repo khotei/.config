@@ -26,42 +26,57 @@ cask "microsoft-outlook" #
 # Video communication and virtual meeting platform
 cask "zoom"
 
-# Secure runtime for JavaScript and TypeScript
-brew "oven-sh/bun/bun"
 # Mac App Store command-line interface
 brew "mas"
-# AWS CLI
+# Chromium based browser
+cask "arc"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Obsidian
+cask "obsidian"
+# Fonts
+cask "font-jetbrains-mono-nerd-font"
+cask "font-caskaydia-cove-nerd-font"
+
+#ZSH
+brew "zsh"
+brew "starship"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "zsh-navigation-tools"
+brew "fzf"
+# Secure runtime for JavaScript and TypeScript
+brew "oven-sh/bun/bun"
+# Clojure 
+brew "clojure"
+# JavaScript IDE
+cask "webstorm"
+# Cursor
+cask "cursor"
+# Rust-based terminal
+cask "warp"
+# Databases and SQL IDE
+# neovim
+brew "neovim"
+cask "datagrip"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Enable Windows-like alt-tab
 cask "alt-tab"
-# Chromium based browser
-cask "arc"
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
-# Databases and SQL IDE
-cask "datagrip"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
-# Utility to hide menu bar items
-cask "hiddenbar"
-# Grammar, spelling and style suggestions in all the writing apps
-cask "languagetool-desktop"
-# App to write, plan, collaborate, and get organised
-cask "notion"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Screenshot measurement and annotation tool
 cask "shottr"
-# Messaging app with a focus on speed and security
-cask "telegram"
-# Rust-based terminal
-cask "warp"
-# Obsidian
-cask "obsidian"
-# JavaScript IDE
-cask "webstorm"
-mas "Hidden Bar", id: 1452453066
+# Utility to hide menu bar items
+cask "hiddenbar"
+# Grammar, spelling and style suggestions in all the writing apps
+cask "languagetool-desktop"
+# mas "Hidden Bar", id: 1452453066 # Do I need it?
 mas "OS Cleaner Pro", id: 1084211765
