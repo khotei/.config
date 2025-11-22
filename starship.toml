@@ -1,157 +1,62 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
-# Inserts a blank line between shell prompts
-add_newline = true
-
-# Prompt format
-format = """
-[╭─](bold blue)$username$hostname$directory$git_branch$git_status$git_state$git_commit
-[╰─](bold blue)$character"""
-
-# Character
-[character]
-success_symbol = '[➜](bold green)'
-error_symbol = '[✗](bold red)'
-vimcmd_symbol = '[V](bold green)'
-
-# Username
-[username]
-style_user = 'bold yellow'
-style_root = 'bold red'
-format = '[$user]($style) '
-disabled = false
-show_always = false
-
-# Hostname
-[hostname]
-ssh_only = false
-format = 'on [$hostname](bold purple) '
-disabled = false
-
-# Directory
-[directory]
-truncation_length = 3
-truncate_to_repo = true
-format = 'in [$path]($style)[$read_only]($read_only_style) '
-style = 'bold cyan'
-read_only = '🔒'
-read_only_style = 'red'
-truncation_symbol = '…/'
-
-# Git Branch
 [git_branch]
-symbol = ' '
-format = 'on [$symbol$branch(:$remote_branch)]($style) '
-style = 'bold purple'
-
-# Git Status
-[git_status]
-format = '([$all_status$ahead_behind]($style) )'
-style = 'bold red'
-conflicted = '🏳'
-ahead = '⇡${count}'
-behind = '⇣${count}'
-diverged = '⇕⇡${ahead_count}⇣${behind_count}'
-up_to_date = '✓'
-untracked = '?${count}'
-stashed = '$${count}'
-modified = '!${count}'
-staged = '+${count}'
-renamed = '»${count}'
-deleted = '✘${count}'
-
-# Git Commit
-[git_commit]
-commit_hash_length = 7
-tag_symbol = '🏷 '
-format = '[\($hash$tag\)]($style) '
-style = 'bold green'
-
-# Git State
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = 'bold yellow'
-
-# Programming Languages
-[nodejs]
-symbol = ' '
-format = 'via [$symbol($version )]($style)'
-style = 'bold green'
-
-[python]
-symbol = ' '
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-style = 'bold yellow'
-
-[rust]
-symbol = ' '
-format = 'via [$symbol($version )]($style)'
-style = 'bold red'
+symbol = " "
 
 [golang]
-symbol = ' '
-format = 'via [$symbol($version )]($style)'
-style = 'bold cyan'
+symbol = " "
 
-[lua]
-symbol = '🌙 '
-format = 'via [$symbol($version )]($style)'
-style = 'bold blue'
+[hg_branch]
+symbol = " "
 
 [java]
-symbol = ' '
-format = 'via [$symbol($version )]($style)'
+symbol = " "
 
-[docker_context]
-symbol = ' '
-format = 'via [$symbol$context]($style) '
-style = 'bold blue'
+[julia]
+symbol = " "
 
-[kubernetes]
-symbol = '⛵ '
-format = 'on [$symbol($user on )($cluster in )$context \($namespace\)]($style) '
-style = 'dimmed green'
-disabled = false
-detect_files = ['k8s']
-
-# Cloud Providers
-[aws]
-symbol = '🅰 '
-format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = 'bold yellow'
-
-# Package Version
-[package]
-symbol = '📦 '
-format = 'via [$symbol$version]($style) '
-style = 'bold 208'
-
-# Memory Usage (disabled by default, uncomment to enable)
 [memory_usage]
-disabled = true
-threshold = 75
-symbol = ' '
-style = 'bold dimmed white'
-format = 'via $symbol [${ram}( | ${swap})]($style) '
+symbol = "󰍛 "
 
-# Time
-[time]
-disabled = false
-format = '🕙[\[ $time \]]($style) '
-time_format = '%T'
-style = 'bold dimmed white'
+[nim]
+symbol = " "
 
-# Command Duration
-[cmd_duration]
-min_time = 500
-format = 'took [$duration]($style) '
-style = 'bold yellow'
+[nix_shell]
+symbol = " "
 
-# Line Break
-[line_break]
-disabled = false
+[package]
+symbol = "󰏗 "
 
-# Shell indicator (disabled by default)
-[shell]
-disabled = true
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+#pyenv_version_name = true
+format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
+style = "bold yellow"
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "
+
+[nodejs]
+format = "via [ Node.js $version](bold green) "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
