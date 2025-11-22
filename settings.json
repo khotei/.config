@@ -1,0 +1,116 @@
+{
+  // ========================================
+  // Appearance & Theming
+  // ========================================
+  "workbench.colorTheme": "Cursor Dark High Contrast",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "catppuccin-icons.hidesExplorerArrows": true,
+  "custom-ui-style.font.sansSerif": "CaskaydiaCove Nerd Font",
+  "custom-ui-style.electron": {
+    "frame": false,
+  },
+  "custom-ui-style.stylesheet": {
+    ".monaco-split-view2.separator-border.horizontal>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "width: 0;"
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#FF6347",
+    "editor.selectionHighlightBackground": "#2E2F38B3",
+    "editor.wordHighlightBackground": "#2E2F38CC",
+    "editor.wordHighlightStrongBackground": "#353740EE",
+    "editor.selectionForeground": "#0B0F10",
+    "editor.findMatchBackground": "#2A3036",
+    "editor.findMatchBorder": "#424A52",
+    "editor.findMatchHighlightBackground": "#2A303680",
+    "editor.wordHighlightBorder": "#424A52"
+  },
+  "window.zoomLevel": 0,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+
+  // ========================================
+  // Editor Text & Cursor
+  // ========================================
+  "editor.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 2,
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "none",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line-thin",
+  "editor.hover.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.renderWhitespace": "none",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.occurrencesHighlight": "off",
+  "editor.quickSuggestions": {
+    "other": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  // "editor.snippetSuggestions": "top",
+
+  // ========================================
+  // Editor Layout & Navigation
+  // ========================================
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "off",
+  "editor.guides.indentation": false,
+  "editor.showFoldingControls": "never",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.tabCompletion": "on",
+
+  // ========================================
+  // Files & Explorer
+  // ========================================
+  "files.trimTrailingWhitespace": true,
+  // "files.insertFinalNewline": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // "scm.diffDecorations": "none",
+
+  // ========================================
+  // Workbench Layout & Chrome
+  // ========================================
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 16,
+
+  // ========================================
+  // Terminal
+  // ========================================
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.6,
+
+  // ========================================
+  // Extensions & Integrations
+  // ========================================
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false
+}
