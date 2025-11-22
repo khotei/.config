@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "escape",
+    "command": "notifications.hideToasts",
+    "when": "notificationToastsVisible"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+]
