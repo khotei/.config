@@ -62,14 +62,17 @@ if vim.g.vscode then
     { 'i', '<C-j>', 'editor.action.triggerSuggest' },
 
     -- Line Editing & Code Maintenance
-    { 'n', '<leader>lu', 'editor.action.copyLinesUpAction' },
-    { 'n', '<leader>ld', 'editor.action.copyLinesDownAction' },
-    { 'n', '<leader>mu', 'editor.action.moveLinesUpAction' },
-    { 'n', '<leader>md', 'editor.action.moveLinesDownAction' },
     { 'n', '<leader>fm', 'editor.action.formatDocument' },
     { 'n', '<leader>oi', 'editor.action.organizeImports' },
     { 'n', '<leader>en', 'editor.action.marker.next' },
     { 'n', '<leader>ep', 'editor.action.marker.prev' },
+
+    -- Bookmarks
+    { 'n', '<leader>mt', 'bookmarks.toggle' },
+    { 'n', '<leader>mT', 'bookmarks.toggleLabeled' },
+    { 'n', '<leader>mL', 'bookmarks.list' },
+    { 'n', '<leader>ml', 'bookmarks.listFromAllFiles' },
+
 
     -- File & Workspace Management
     { 'n', '<leader>cp', 'copyFilePath' },
@@ -87,6 +90,12 @@ if vim.g.vscode then
     { 'n', '<leader>wh', 'workbench.action.splitEditorDown' },
     { 'n', '<leader>ww', 'workbench.action.joinTwoGroups' },
     { 'n', '<leader>wa', 'workbench.action.evenEditorWidths' },
+
+    -- Task Management
+    { 'n', '<leader>tr', 'workbench.action.tasks.runTask' },
+    { 'n', '<leader>ts', 'workbench.action.tasks.terminate' },
+    { 'n', '<leader>to', 'workbench.action.tasks.showTasks' },
+    { 'n', '<leader>te', 'workbench.action.tasks.restartTask' },
   }
 
   for _, mapping in ipairs(mappings) do
