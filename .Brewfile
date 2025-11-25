@@ -25,6 +25,8 @@ cask "microsoft-auto-update"
 cask "microsoft-outlook" #
 # Video communication and virtual meeting platform
 cask "zoom"
+# Chrome
+cask "google-chrome"
 
 # Mac App Store command-line interface
 brew "mas"
@@ -39,14 +41,9 @@ cask "obsidian"
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
 cask "font-caskaydia-cove-nerd-font"
+# ZSH tools
+brew "zsh-vi-mode"
 
-#ZSH
-brew "zsh"
-brew "starship"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "zsh-navigation-tools"
-brew "fzf"
 # Secure runtime for JavaScript and TypeScript
 brew "oven-sh/bun/bun"
 # Clojure 
