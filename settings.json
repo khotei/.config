@@ -1,9 +1,12 @@
 {
+  // ========================================
+  // Appearance & Theme
+  // ========================================
   "workbench.iconTheme": "catppuccin-mocha",
   "catppuccin-icons.hidesExplorerArrows": true,
   "custom-ui-style.font.sansSerif": "CaskaydiaCove Nerd Font",
   "custom-ui-style.electron": {
-    "frame": false,
+    "frame": false
   },
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#FF6347",
@@ -16,30 +19,6 @@
     "editor.findMatchHighlightBackground": "#2A303680",
     "editor.wordHighlightBorder": "#424A52"
   },
-  "window.zoomLevel": 0.5,
-  "window.titleBarStyle": "native",
-  "zenMode.fullScreen": false,
-
-  // ========================================
-  // Editor Text & Cursor
-  // ========================================
-  "editor.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
-  "editor.fontSize": 15,
-  "workbench.editor.wrapTabs": true,
-  // "files.simpleDialog.enable": true,
-  "editor.lineHeight": 2,
-  "editor.fontLigatures": true,
-  "editor.renderLineHighlight": "none",
-  "editor.cursorBlinking": "solid",
-  "editor.cursorStyle": "line-thin",
-  "editor.hover.enabled": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
-  "editor.renderWhitespace": "none",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.codeLens": true,
-  "editor.inlayHints.enabled": "on",
-  "eslint.codeActionsOnSave.mode": "all",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -50,53 +29,87 @@
       }
     ]
   },
+
+  // ========================================
+  // Window
+  // ========================================
+  "window.zoomLevel": 0.5,
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "zenMode.fullScreen": false,
+  "zenMode.showTabs": "none",
+
+  // ========================================
+  // Editor - Font & Typography
+  // ========================================
+  "editor.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 2,
+  "editor.fontLigatures": true,
+
+  // ========================================
+  // Editor - Cursor & Selection
+  // ========================================
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.renderLineHighlight": "none",
   "editor.occurrencesHighlight": "off",
+
+  // ========================================
+  // Editor - Suggestions & IntelliSense
+  // ========================================
   "editor.quickSuggestions": {
     "other": "off"
   },
   "editor.suggestOnTriggerCharacters": false,
   "editor.snippetSuggestions": "top",
+  "editor.codeLens": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.hover.enabled": false,
 
   // ========================================
-  // Editor Layout & Navigation
+  // Editor - Layout & Visual
   // ========================================
-  "editor.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
-  // "editor.lineNumbers": "off",
-  "editor.guides.indentation": false,
-  "editor.showFoldingControls": "never",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "editor.overviewRulerBorder": false,
   "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.showFoldingControls": "never",
+  "editor.stickyScroll.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.bracketPairColorization.enabled": true,
+
+  // ========================================
+  // Editor - Behavior
+  // ========================================
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
-  "search.quickOpen.includeHistory": false,
+  "editor.smoothScrolling": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.showTabs": "none",
 
   // ========================================
   // Files & Explorer
   // ========================================
-  "npm.scriptExplorerAction": "run",
-  "npm.enableRunFromFolder": true,
   "files.trimTrailingWhitespace": true,
-  // "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  // "scm.diffDecorations": "none",
+  "search.quickOpen.includeHistory": false,
 
   // ========================================
-  // Workbench Layout & Chrome
+  // Workbench
   // ========================================
   "workbench.sideBar.location": "right",
-  // "workbench.activityBar.location": "hidden",
-  // "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
-  "breadcrumbs.enabled": false,
   "workbench.tree.renderIndentGuides": "none",
   "workbench.tree.indent": 16,
+  "breadcrumbs.enabled": false,
 
   // ========================================
   // Terminal
@@ -110,19 +123,39 @@
   "terminal.integrated.cwd": "",
 
   // ========================================
-  // Extensions & Integrations
+  // Git
+  // ========================================
+  "git.autofetch": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+
+  // ========================================
+  // Extensions
   // ========================================
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "git.autofetch": true,
+
+  // ========================================
+  // ESLint
+  // ========================================
+  "eslint.codeActionsOnSave.mode": "all",
+
+  // ========================================
+  // NPM
+  // ========================================
+  "npm.scriptExplorerAction": "run",
+  "npm.enableRunFromFolder": true,
+
+  // ========================================
+  // Cursor
+  // ========================================
   "cursor.composer.textSizeScale": 1.15,
+
+  // ========================================
+  // Updates
+  // ========================================
   "update.releaseTrack": "dev",
-  "update.mode": "silentlyApplyOnQuit",
-  "workbench.editor.showTabs": "none",
-  "zenMode.showTabs": "none",
-  "window.customTitleBarVisibility": "never",
+  "update.mode": "silentlyApplyOnQuit"
 }
