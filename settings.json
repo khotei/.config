@@ -25,6 +25,8 @@
   // ========================================
   "editor.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
   "editor.fontSize": 15,
+  "workbench.editor.wrapTabs": true,
+  // "files.simpleDialog.enable": true,
   "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.renderLineHighlight": "none",
@@ -53,7 +55,7 @@
     "other": "off"
   },
   "editor.suggestOnTriggerCharacters": false,
-  // "editor.snippetSuggestions": "top",
+  "editor.snippetSuggestions": "top",
 
   // ========================================
   // Editor Layout & Navigation
@@ -76,6 +78,8 @@
   // ========================================
   // Files & Explorer
   // ========================================
+  "npm.scriptExplorerAction": "run",
+  "npm.enableRunFromFolder": true,
   "files.trimTrailingWhitespace": true,
   // "files.insertFinalNewline": true,
   "explorer.confirmDragAndDrop": false,
@@ -118,6 +122,7 @@
   "cursor.composer.textSizeScale": 1.15,
   "update.releaseTrack": "dev",
   "update.mode": "silentlyApplyOnQuit",
-  "window.customTitleBarVisibility": "never",
   "workbench.editor.showTabs": "none",
+  "zenMode.showTabs": "none",
+  "window.customTitleBarVisibility": "never",
 }
