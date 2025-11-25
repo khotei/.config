@@ -21,6 +21,11 @@
     "when": "terminalFocus"
   },
   {
+    "key": "alt+c",
+  "command": "workbench.action.terminal.newInActiveWorkspace",
+    "when": "terminalFocus"
+  },
+  {
     "key": "alt+k",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
