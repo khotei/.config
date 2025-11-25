@@ -33,13 +33,13 @@ if vim.g.vscode then
     { 'n', '<leader>gi', 'editor.action.goToImplementation' },
     { 'n', '<leader>gr', 'editor.action.goToReferences' },
     { 'n', '<leader>gs', 'workbench.action.gotoSymbol' },
+    { 'n', '<leader>ss', 'workbench.action.showAllSymbols' },
     { 'n', '<leader>gl', 'workbench.action.gotoLine' },
     { 'n', '<leader>nf', 'workbench.action.navigateForward' },
     { 'n', '<leader>nb', 'workbench.action.navigateBack' },
     { 'n', '<leader>je', 'workbench.action.navigateToLastEditLocation' },
 
     -- Quick Search & Peek Actions
-    { 'n', '<leader>ss', 'workbench.action.showAllSymbols' },
     { 'n', '<leader>sa', 'workbench.action.showCommands' },
     { 'n', '<leader>sf', 'workbench.action.quickOpen' },
     { 'n', '<leader>vd', 'editor.action.peekDefinition' },
@@ -73,7 +73,6 @@ if vim.g.vscode then
     { 'n', '<leader>mL', 'bookmarks.list' },
     { 'n', '<leader>ml', 'bookmarks.listFromAllFiles' },
 
-
     -- File & Workspace Management
     { 'n', '<leader>cp', 'copyFilePath' },
     { 'n', '<leader>cr', 'copyRelativeFilePath' },
@@ -96,6 +95,14 @@ if vim.g.vscode then
     { 'n', '<leader>ts', 'workbench.action.tasks.terminate' },
     { 'n', '<leader>to', 'workbench.action.tasks.showTasks' },
     { 'n', '<leader>te', 'workbench.action.tasks.restartTask' },
+
+    -- Display
+    -- make toggle function
+    { 'n', '<leader>ht', 'workbench.action.hideEditorTabs' },
+    { 'n', '<leader>st', 'workbench.action.showMultipleEditorTabs' },
+    { 'n', '<leader>hb', 'hideCustomTitleBar' },
+    { 'n', '<leader>sb', 'showCustomTitleBar' },
+    { 'n', '<leader>tz', 'workbench.action.toggleZenMode' },
   }
 
   for _, mapping in ipairs(mappings) do
