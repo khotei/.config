@@ -1,16 +1,9 @@
 {
-  // ========================================
-  // Appearance & Theming
-  // ========================================
-  "workbench.colorTheme": "Cursor Dark High Contrast",
   "workbench.iconTheme": "catppuccin-mocha",
   "catppuccin-icons.hidesExplorerArrows": true,
   "custom-ui-style.font.sansSerif": "CaskaydiaCove Nerd Font",
   "custom-ui-style.electron": {
     "frame": false,
-  },
-  "custom-ui-style.stylesheet": {
-    ".monaco-split-view2.separator-border.horizontal>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "width: 0;"
   },
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#FF6347",
@@ -23,15 +16,15 @@
     "editor.findMatchHighlightBackground": "#2A303680",
     "editor.wordHighlightBorder": "#424A52"
   },
-  "window.zoomLevel": 0,
-  "window.customTitleBarVisibility": "never",
+  "window.zoomLevel": 0.5,
   "window.titleBarStyle": "native",
+  "zenMode.fullScreen": false,
 
   // ========================================
   // Editor Text & Cursor
   // ========================================
   "editor.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.renderLineHighlight": "none",
@@ -41,6 +34,10 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.renderWhitespace": "none",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeLens": true,
+  "editor.inlayHints.enabled": "on",
+  "eslint.codeActionsOnSave.mode": "all",
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -63,7 +60,7 @@
   // ========================================
   "editor.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.lineNumbers": "off",
+  // "editor.lineNumbers": "off",
   "editor.guides.indentation": false,
   "editor.showFoldingControls": "never",
   "editor.scrollbar.horizontal": "hidden",
@@ -73,6 +70,8 @@
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+  "search.quickOpen.includeHistory": false,
 
   // ========================================
   // Files & Explorer
@@ -87,9 +86,8 @@
   // Workbench Layout & Chrome
   // ========================================
   "workbench.sideBar.location": "right",
-  "workbench.activityBar.location": "hidden",
-  "workbench.editor.showTabs": "none",
-  "workbench.statusBar.visible": false,
+  // "workbench.activityBar.location": "hidden",
+  // "workbench.statusBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "breadcrumbs.enabled": false,
@@ -99,10 +97,13 @@
   // ========================================
   // Terminal
   // ========================================
-  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font, JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.6,
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.cwd": "",
 
   // ========================================
   // Extensions & Integrations
@@ -112,5 +113,11 @@
   },
   "gitlens.currentLine.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false
+  "gitlens.codeLens.recentChange.enabled": false,
+  "git.autofetch": true,
+  "cursor.composer.textSizeScale": 1.15,
+  "update.releaseTrack": "dev",
+  "update.mode": "silentlyApplyOnQuit",
+  "window.customTitleBarVisibility": "never",
+  "workbench.editor.showTabs": "none",
 }
