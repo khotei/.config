@@ -60,6 +60,7 @@ if vim.g.vscode then
     { 'n', '<leader>qf', 'editor.action.quickFix' },
     { 'n', '<leader>sg', 'editor.action.triggerSuggest' },
     { 'i', '<C-j>', 'editor.action.triggerSuggest' },
+    { 'n', '<leader>jw', 'jump-extension.jump-to-the-start-of-a-word' },
 
     -- Line Editing & Code Maintenance
     { 'n', '<leader>fm', 'editor.action.formatDocument' },
@@ -98,8 +99,8 @@ if vim.g.vscode then
 
     -- Display
     -- make toggle function
-    { 'n', '<leader>ht', 'workbench.action.hideEditorTabs' },
-    { 'n', '<leader>st', 'workbench.action.showMultipleEditorTabs' },
+    { 'n', '<leader>ht', 'workbench.action.zenHideEditorTabs' },
+    { 'n', '<leader>st', 'workbench.action.zenShowMultipleEditorTabs' },
     { 'n', '<leader>hb', 'hideCustomTitleBar' },
     { 'n', '<leader>sb', 'showCustomTitleBar' },
     { 'n', '<leader>tz', 'workbench.action.toggleZenMode' },
