@@ -1,0 +1,74 @@
+" past without overwriting register
+xnoremap p P
+" sync clipboard
+set clipboard^=unnamed,unnamedplus
+" press \ before delete and it will write into _, and not in the default buffer
+noremap \ "_
+
+" adjust jumping with between angle "<,>"
+set matchpairs+=<:>
+
+set hlsearch
+set ignorecase
+set smartcase
+set incsearch
+
+" remove bell sound
+set visualbell
+
+set scrolloff=3
+
+set timeoutlen=3000
+
+set ideajoin " smart idea join instead stupid vim join
+set ideamarks
+
+set NERDTree
+set surround
+set easymotion
+set peekaboo
+set anyobject
+
+let mapleader = ' '
+
+noremap <leader>cc :edit ~/.ideavimrc<cr>
+noremap <leader>cs :source ~/.ideavimrc<cr>
+
+noremap U <C-r> " redo to U
+noremap <Esc> :nohl<cr> " remove search hl
+
+" --- 1. AI & Tools (Leader + a) ---
+nmap <leader>aa <Action>(AIAssistant.Editor.AskAiAssistantInEditor)
+nmap <leader>at <Action>(ActivateAIAssistantToolWindow)
+nmap <leader>ae <Action>(ActivateElectroJunToolWindowToolWindow) " Junie
+nmap <leader>ag <Action>(Terminal.GenerateCommandFromText)
+
+" --- 2. Find & Search (Leader + f) ---
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>ft <Action>(TextSearchAction)
+nmap <leader>fu <Action>(FindUsages)
+nmap <leader>fs <Action>(ShowUsages)
+nmap <leader>fr <Action>(ShowRecentFindUsagesGroup)
+
+" --- 3. Navigation & Definitions (Leader + n) ---
+nmap <leader>nt <Action>(QuickTypeDefinition)
+nmap <leader>ni <Action>(ExpressionTypeInfo)
+nmap <leader>nq <Action>(QuickImplementations)
+
+" --- 4. Code Actions (Leader + c) ---
+nmap <leader>cs <Action>(SurroundWith)
+nmap <leader>cw <Action>(Unwrap)
+nmap <leader>cc <Action>(SmartTypeCompletion)
+
+" --- 5. Bookmarks (Leader + b) ---
+nmap <leader>bt <Action>(ToggleBookmark)
+nmap <leader>bm <Action>(ToggleBookmarkWithMnemonic)
+nmap <leader>bs <Action>(ShowBookmarks)
+
+" --- 6. Git & VCS (Leader + g) ---
+nmap <leader>gb <Action>(Git.Branches)
+nmap <leader>gl <Action>(Vcs.QuickListPopupAction)
+
+" --- 7. Windows (Leader + w) ---
+nmap <leader>wh <Action>(HideAllWindows)
+nmap <leader>wj <Action>(JumpToLastWindow)
