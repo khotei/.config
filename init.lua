@@ -1,7 +1,7 @@
 local vscode = require('vscode')
 
 -- leader map
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -- sync with editor clipboard
 vim.opt.clipboard = 'unnamedplus'
